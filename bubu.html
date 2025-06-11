@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BUBU - Clean White Design</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Main Page Content -->
+  <div id="mainContent">
+    <header class="border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-gray-900">BUBU</h1>
+        <nav class="space-x-6 hidden md:block">
+          <a href="#" class="text-gray-600 hover:text-black">Home</a>
+          <a href="#" class="text-gray-600 hover:text-black">Features</a>
+          <a href="#" class="text-gray-600 hover:text-black">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="py-20 px-4 sm:px-6 text-center">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">Welcome to BUBU</h2>
+      <p class="text-base sm:text-lg md:text-xl text-gray-600 mb-6">Male or female, fashion or essentials — we’ve got it all under one roof.</p>
+      <button class="bg-black text-white px-6 py-3 rounded-xl hover:opacity-90 transition">Get Started</button>
+    </section>
+
+    <section class="py-12 px-4 sm:px-6">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-2xl font-semibold mb-6 text-center text-gray-900">Featured Items</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <!-- Item cards (10) -->
+          <div onclick="openDetail(1)" class="cursor-pointer border border-gray-200 rounded-xl p-4 shadow-sm hover:shadow transition">
+            <img src="https://i.postimg.cc/sfJ1zwGS/0312200181-BLP-Ladies-Dress-Fashion-Bug-Sri-Lanka.jpg" alt="Item 1" class="w-full h-48 object-cover rounded-lg mb-4" />
+            <h4 class="font-semibold mb-1 text-gray-900">Fashion Dress</h4>
+            <p class="text-gray-700 font-semibold mb-2">4,500 LKR</p>
+            <p class="text-gray-500">Click to view full page.</p>
+          </div>
+
+          <div onclick="openDetail(2)" class="cursor-pointer border border-gray-200 rounded-xl p-4 shadow-sm hover:shadow transition">
+            <img src="https://i.postimg.cc/wTfvyMVj/4734a42513256f2917c17d3f08bc88a2shutterstock585964295ab638332af3f.jpg" alt="Item 2" class="w-full h-48 object-cover rounded-lg mb-4" />
+            <h4 class="font-semibold mb-1 text-gray-900">Shutterstock Model</h4>
+            <p class="text-gray-700 font-semibold mb-2">7,200 LKR</p>
+            <p class="text-gray-500">Click to view full page.</p>
+          </div>
+
+          <div onclick="openDetail(3)" class="cursor-pointer border border-gray-200 rounded-xl p-4 shadow-sm hover:shadow transition">
+            <img src="https://i.postimg.cc/HknrBXxM/60ab26ea752c6.png" alt="Item 3" class="w-full h-48 object-cover rounded-lg mb-4" />
+            <h4 class="font-semibold mb-1 text-gray-900">Transparent Model</h4>
+            <p class="text-gray-700 font-semibold mb-2">3,900 LKR</p>
+            <p class="text-gray-500">Click to view full page.</p>
+          </div>
+
+          <div onclick="openDetail(4)" class="cursor-pointer border border-gray-200 rounded-xl p-4 shadow-sm hover:shadow transition">
+            <img src="https://i.postimg.cc/JnVtrFQ3/61m-FY-Pw-PPL-AC-SX385.jpg" alt="Item 4" class="w-full h-48 object-cover rounded-lg mb-4" />
+            <h4 class="font-semibold mb-1 text-gray-900">Amazon Clothing</h4>
+            <p class="text-gray-700 font-semibold mb-2">5,500 LKR</p>
+            <p class="text-gray-500">Click to view full page.</p>
+          </div>
+
+          <div onclick="openDetail(5)" class="cursor-pointer border border-gray-200 rounded-xl p-4 shadow-sm hover:shadow transition">
+            <img src="https://i.postimg.cc/bJxrsR67/images.jpg" alt="Item 5" class="w-full h-48 object-cover rounded-lg mb-4" />
+            <h4 class="font-semibold mb-1 text-gray-900">Simple Summer</h4>
+            <p class="text-gray-700 font-semibold mb-2">3,800 LKR</p>
+            <p class="text-gray-500">Click to view full page.</p>
+          </div>
+
+          <div onclick="openDetail(6)" class="cursor-pointer border border-gray-200 rounded-xl p-4 shadow-sm hover:shadow transition">
+            <img src="https://i.postimg.cc/Hn3Ltk13/ladies-party-wear-short-dress-by-raaika-full.jpg" alt="Item 6" class="w-full h-48 object-cover rounded-lg mb-4" />
+            <h4 class="font-semibold mb-1 text-gray-900">Party Dress</h4>
+            <p class="text-gray-700 font-semibold mb-2">6,400 LKR</p>
+            <p class="text-gray-500">Click to view full page.</p>
+          </div>
+
+          <div onclick="openDetail(7)" class="cursor-pointer border border-gray-200 rounded-xl p-4 shadow-sm hover:shadow transition">
+            <img src="https://i.postimg.cc/5tF6MJ8N/SU258692-Shirts-MOB.jpg" alt="Item 7" class="w-full h-48 object-cover rounded-lg mb-4" />
+            <h4 class="font-semibold mb-1 text-gray-900">Casual Shirt</h4>
+            <p class="text-gray-700 font-semibold mb-2">2,900 LKR</p>
+            <p class="text-gray-500">Click to view full page.</p>
+          </div>
+
+          <div onclick="openDetail(8)" class="cursor-pointer border border-gray-200 rounded-xl p-4 shadow-sm hover:shadow transition">
+            <img src="https://i.postimg.cc/8PPczMLY/womens-elbow-sleeve-short-dress-010102507812.jpg" alt="Item 8" class="w-full h-48 object-cover rounded-lg mb-4" />
+            <h4 class="font-semibold mb-1 text-gray-900">Elbow Sleeve Dress</h4>
+            <p class="text-gray-700 font-semibold mb-2">4,300 LKR</p>
+            <p class="text-gray-500">Click to view full page.</p>
+          </div>
+
+          <div onclick="openDetail(9)" class="cursor-pointer border border-gray-200 rounded-xl p-4 shadow-sm hover:shadow transition">
+            <img src="https://i.postimg.cc/3N3RpDVd/womens-summer-dress-0114164467900.jpg" alt="Item 9" class="w-full h-48 object-cover rounded-lg mb-4" />
+            <h4 class="font-semibold mb-1 text-gray-900">Summer Dress</h4>
+            <p class="text-gray-700 font-semibold mb-2">4,700 LKR</p>
+            <p class="text-gray-500">Click to view full page.</p>
+          </div>
+
+          <div onclick="openDetail(10)" class="cursor-pointer border border-gray-200 rounded-xl p-4 shadow-sm hover:shadow transition">
+            <img src="https://i.postimg.cc/K8WRVjkH/yellow-textured-button-up-peplum-top.jpg" alt="Item 10" class="w-full h-48 object-cover rounded-lg mb-4" />
+            <h4 class="font-semibold mb-1 text-gray-900">Yellow Peplum</h4>
+            <p class="text-gray-700 font-semibold mb-2">3,200 LKR</p>
+            <p class="text-gray-500">Click to view full page.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 px-4 sm:px-6 text-center">
+      <h3 class="text-2xl sm:text-3xl font-bold mb-4 text-gray-900">Start using BUBU today</h3>
+      <p class="text-gray-500 mb-6">A fresh experience is one click away.</p>
+      <button class="bg-black text-white px-6 py-3 rounded-xl hover:opacity-90 transition">Sign Up</button>
+    </section>
+
+    <footer class="border-t border-gray-200 py-8 text-center text-sm text-gray-500">
+      <p>&copy; 2025 BUBU. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Detail View (hidden by default) -->
+  <div id="detailPage" class="hidden p-6 sm:p-10 max-w-4xl mx-auto">
+    <button onclick="goBack()" class="text-blue-600 mb-6 underline">← Back</button>
+    <h2 id="detailTitle" class="text-3xl font-bold mb-4"></h2>
+    <img id="detailImage" src="" alt="Detail Image" class="w-full rounded-lg mb-6" />
+    <p id="detailDescription" class="text-gray-700 mb-2"></p>
+    <p id="detailPrice" class="text-gray-900 font-semibold text-lg"></p>
+  </div>
+
+  <script>
+    function openDetail(id) {
+      const items = {
+        1: {
+          title: "Fashion Dress",
+          image: "https://i.postimg.cc/sfJ1zwGS/0312200181-BLP-Ladies-Dress-Fashion-Bug-Sri-Lanka.jpg",
+          description: "Explore this elegant fashion dress perfect for any occasion.",
+          price: "4,500 LKR"
+        },
+        2: {
+          title: "Shutterstock Model",
+          image: "https://i.postimg.cc/wTfvyMVj/4734a42513256f2917c17d3f08bc88a2shutterstock585964295ab638332af3f.jpg",
+          description: "A beautiful model photo for your creative projects.",
+          price: "7,200 LKR"
+        },
+        3: {
+          title: "Transparent Model",
+          image: "https://i.postimg.cc/HknrBXxM/60ab26ea752c6.png",
+          description: "High-quality transparent background model image.",
+          price: "3,900 LKR"
+        },
+        4: {
+          title: "Amazon Clothing",
+          image: "https://i.postimg.cc/JnVtrFQ3/61m-FY-Pw-PPL-AC-SX385.jpg",
+          description: "Trendy clothing available on Amazon.",
+          price: "5,500 LKR"
+        },
+        5: {
+          title: "Simple Summer",
+          image: "https://i.postimg.cc/bJxrsR67/images.jpg",
+          description: "Light and breezy summer wear for hot days.",
+          price: "3,800 LKR"
+        },
+        6: {
+          title: "Party Dress",
+          image: "https://i.postimg.cc/Hn3Ltk13/ladies-party-wear-short-dress-by-raaika-full.jpg",
+          description: "Stand out at any party with this gorgeous dress.",
+          price: "6,400 LKR"
+        },
+        7: {
+          title: "Casual Shirt",
+          image: "https://i.postimg.cc/5tF6MJ8N/SU258692-Shirts-MOB.jpg",
+          description: "Comfortable and stylish casual shirt.",
+          price: "2,900 LKR"
+        },
+        8: {
+          title: "Elbow Sleeve Dress",
+          image: "https://i.postimg.cc/8PPczMLY/womens-elbow-sleeve-short-dress-010102507812.jpg",
+          description: "Elegant elbow sleeve dress for every occasion.",
+          price: "4,300 LKR"
+        },
+        9: {
+          title: "Summer Dress",
+          image: "https://i.postimg.cc/3N3RpDVd/womens-summer-dress-0114164467900.jpg",
+          description: "Cool and stylish summer dress.",
+          price: "4,700 LKR"
+        },
+        10: {
+          title: "Yellow Peplum",
+          image: "https://i.postimg.cc/K8WRVjkH/yellow-textured-button-up-peplum-top.jpg",
+          description: "Bright yellow peplum top for casual wear.",
+          price: "3,200 LKR"
+        }
+      };
+      const item = items[id];
+      if (!item) return;
+
+      document.getElementById('mainContent').style.display = 'none';
+      const detailPage = document.getElementById('detailPage');
+      detailPage.style.display = 'block';
+      document.getElementById('detailTitle').innerText = item.title;
+      document.getElementById('detailImage').src = item.image;
+      document.getElementById('detailDescription').innerText = item.description;
+      document.getElementById('detailPrice').innerText = `Price: ${item.price}`;
+    }
+
+    function goBack() {
+      document.getElementById('detailPage').style.display = 'none';
+      document.getElementById('mainContent').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
